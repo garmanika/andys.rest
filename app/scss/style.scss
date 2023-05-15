@@ -1,5 +1,145 @@
-
 @import "_global";
 @import "_mixin";
 @import "_vars";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--color-white);
+}
+.header-top {
+  background: var(--color-primary);
+	position: relative;
+	.btn{
+		color: var(--color-white);
+	}
+}
+.header-top-inner > .header-box .btn{
+	width: 233px;
+	margin-left: 40px;
+}
+.header-top {
+  padding: 20px 0;
+}
+.header-top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-box {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  picture,
+  img,
+  svg {
+    display: block;
+    height: 34px;
+    object-fit: contain;
+  }
+}
+.header-phone-number {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--color-white);
+}
+.header-user {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 16px;
+}
+.header-user-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-white);
+}
+.header-phone {
+}
+.header-mobile-menu-trigger {
+  cursor: pointer;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  display: none;
+  img:nth-child(2) {
+    display: none;
+  }
+}
+.header-mobile-menu-trigger.active {
+  img:nth-child(1) {
+    display: none;
+  }
+  img:nth-child(2) {
+    display: block;
+  }
+}
+.header-user-icon{
+	width: 20px;
+	height: 20px;
+	img,
+	svg{
+		display: block;
+	}
+}
+.header-top {
+  .header-phone-icon {
+    display: none;
+		width: 24px;
+		height: 24px;
+  }
+}
+ ul.header-menu-mobile-list {
+   display: block;
+   margin-left: 40px;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   gap: 40px;
+ }
+  .header-menu-mobile-item > a, .header-menu-mobile-item > span {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 24px;
+   text-transform: uppercase;
+
+   color: var(--color-white);
+ }
+.header-menu-mobile-sub{
+	display: none;
+	.header-menu-mobile-sub {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--color-white);
+}
+}
+.header-user {
+}
+.header-phone {
+  text-align: right;
+  margin-left: 40px;
+}
+.header-phone-contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-white);
+	margin-top: 4px;
+}
+.header-menu-mobile-container .container{
+	padding: 0;
+}
+.header-menu-mobile-footer{
+	display: none;
+}
+@import "_media-header";
 @import "_media";

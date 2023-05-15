@@ -10,10 +10,10 @@ html {
   position: relative;
   font-family: "Montserrat", sans-serif;
   scrollbar-width: thin;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 150%;
-	color: var(--color-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-primary);
 }
 
 body.no-scroll-mobile {
@@ -60,7 +60,7 @@ input::-moz-placeholder {
 
 .content {
   flex: 1 0 auto;
-	margin-top: 48px;
+  margin-top: 88px;
 }
 
 a,
@@ -76,9 +76,9 @@ input {
 }
 
 .web-radio-btn label {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 130%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
   padding-left: 32px;
   color: #242424;
   cursor: pointer;
@@ -124,6 +124,35 @@ input {
 }
 
 .btn {
+  border: 1.5px solid var(--color-accent);
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+  padding: 0 32px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
+  }
+  &:disabled {
+    border-color: #eee;
+  }
+  &.primory {
+  }
+	svg,
+	img{
+		width: 20px;
+		height: 20px;
+	}
 }
 
 .wrapper-page {
@@ -160,8 +189,6 @@ ul {
   text-decoration: none;
   padding: 0;
 }
-
-
 
 .footer {
   flex: 0 0 auto;
@@ -277,7 +304,6 @@ h1,
   font-weight: 500;
   font-size: 42px;
   line-height: 130%;
-  
 }
 
 h2,
@@ -287,7 +313,6 @@ h2,
   font-weight: 500;
   font-size: 36px;
   line-height: 130%;
-  
 }
 
 h3,
@@ -297,40 +322,28 @@ h3,
   font-weight: 500;
   font-size: 24px;
   line-height: 130%;
-  
 }
 
 h4,
 .h4 {
   margin: 0;
   padding: 0;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 150%;	
-	
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 p,
 .p {
   margin: 0;
   padding: 0;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 150%;	
-	
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
-
-
-
 
 main {
- 
-
 }
-
-
-
-
 
 //breadcrumbs
 .breadcrumbs {
@@ -425,10 +438,6 @@ main {
     width: 100%;
   }
 }
-
-
-
-
 
 .web-input {
   border: none;
@@ -540,159 +549,67 @@ main {
   }
 }
 
-
-
 .container-mod {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
-
-
 }
 
-
-
-
-
-@media (min-width: 576px) {
-
-
-  .wrapper-page {
-    padding-bottom: 0;
-  }
-
-
+@media (max-width: 1399px) {
 }
-
-@media (min-width: 768px) {
-
-
- 
-
-
-
-
-
-
-
-
-
-
-  // h1,
-  // .h1 {
-  //   font-size: 40px;
-  //   line-height: 50px;
-  //   color: var(--color-primary);
-  // }
-
-  // h2,
-  // .h2 {
-  //   font-size: 32px;
-  //   line-height: 40px;
-  //   color: var(--color-primary);
-  // }
-
-  // h3,
-  // .h3 {
-  //   font-size: 26px;
-  //   line-height: 36px;
-  //   color: var(--color-primary);
-  // }
-
-  // h4,
-  // .h4 {
-  //   font-size: 18px;
-  //   line-height: 32px;
-  //   color: var(--color-primary);
-  // }
-
-  // p,
-  // .p {
-  //   font-size: 18px;
-  //   line-height: 32px;
-  // }
-
-
-
-
-
- 
-
-
+@media (max-width: 1119px) {
 }
+@media (max-width: 991px) {
+  h1,
+  .h1 {
+    font-size: 40px;
+    line-height: 130%;
+  }
 
-@media (min-width: 992px) {
+  h2,
+  .h2 {
+    font-size: 36px;
+    line-height: 130%;
+  }
 
+  h3,
+  .h3 {
+    font-size: 24px;
+    line-height: 130%;
+  }
 
-
-
-
+  h4,
+  .h4 {
+    font-size: 18px;
+    line-height: 150%;
+  }
 }
-
-@media (min-width: 1200px) {
-
-
-  body.no-scroll-mobile {
-    overflow: auto;
+@media (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 30px;
+    line-height: 130%;
   }
 
-
-
-
-
-  // h1,
-  // .h1 {
-  //   font-size: 56px;
-  //   line-height: 70px;
-  // }
-
-  // h2,
-  // .h2 {
-  //   font-size: 40px;
-  //   line-height: 50px;
-  // }
-
-  // h3,
-  // .h3 {
-  //   font-size: 30px;
-  //   line-height: 46px;
-  // }
-
-  // h4,
-  // .h4 {
-  //   font-size: 24px;
-  //   line-height: 36px;
-  // }
-
-
-
-  main {
-  
+  h2,
+  .h2 {
+    font-size: 24px;
+    line-height: 130%;
   }
 
-  .breadcrumbs {
-   
+  h3,
+  .h3 {
+    font-size: 18px;
+    line-height: 150%;
   }
 
-  .page-more {
-    
+  h4,
+  .h4 {
+    font-size: 16px;
+    line-height: 150%;
   }
-
-
-
-}
-
-@media (min-width: 1400px) {
-
-
-  .content {
-    margin-top: 136px;
-  }
-
-  main {
-  
-  }
-
-
+	.content{
+		margin-top: 48px;
+	}
 }

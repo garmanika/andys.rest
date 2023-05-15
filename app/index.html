@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap-grid.css" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/swiper.min.css">
@@ -16,13 +16,145 @@
 </head>
 
 <body>
-	
+
 	<div class="wrapper-page">
 		<div class="content">
-			<header class="header">
+			<header class="header sticky">
 				<div class="header-wrapper">
 					<div class="header-top">
 						<div class="container">
+							<div class="header-top-inner">
+								<div class="header-box">
+									<a href="#" class="header-logo">
+										<picture>
+											<source media="(max-width: 558px)" srcset="img/svg/header-logo-mob.svg" />
+											<source srcset="img/svg/header-logo-desk.svg" />
+											<img src="img/svg/header-logo-desk.svg" alt="">
+										</picture>
+									</a>
+									<div class="header-menu-mobile-container ">
+										<div class="container">
+											<div class="header-menu-mobile is-top">
+
+												<ul class="header-menu-mobile-list">
+													<li class="header-menu-mobile-item is-parent d-xl-none">
+														<a href="/services/">
+															Меню <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+																fill="none">
+																<path d="M7.5 15L12.5 10L7.5 5" stroke="#999999" stroke-width="1.5" stroke-linecap="round"
+																	stroke-linejoin="round" />
+															</svg>
+														</a>
+														<div class="header-menu-mobile-sub">
+															<div class="header-menu-mobile-sub-heading">
+																<a class="back-trigger" href="#">
+																	Меню
+																	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+																		fill="none">
+																		<path d="M7.5 15L12.5 10L7.5 5" stroke="#999999" stroke-width="1.5"
+																			stroke-linecap="round" stroke-linejoin="round" />
+																	</svg>
+																</a>
+															</div>
+															<ul class="header-menu-mobile-sub-list">
+	
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Завтрак</a>
+																</li>
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Салаты</a>
+																</li>
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Закуски</a>
+																</li>
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Пицца</a>
+																</li>
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Паста</a>
+																</li>
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Горячие закуски</a>
+																</li>
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Бургеры </a>
+																</li>
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Горячие блюда </a>
+																</li>
+																<li class="header-menu-mobile-sub-item">
+																	<a href="#">Десерты </a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="header-menu-mobile-item ">
+														<a href="/data/">
+															Акции
+														</a>
+	
+													</li>
+													<li class="header-menu-mobile-item ">
+														<a href="/solutions/">
+															Мероприятия
+														</a>
+	
+													</li>
+					
+													<li class="header-menu-mobile-item ">
+														<a href="/company/">
+															о нас
+														</a>
+	
+													</li>
+	
+												</ul>
+												<div class="header-menu-mobile-footer">
+													<a href="tel:+79105970088" class="header-phone-number">+7 910 597-00-88</a>
+													<div class="header-phone-contact">Калуга, ул. Суворова, д. 110</div>
+												</div>
+											</div>
+										</div>
+			
+
+									</div>
+								</div>
+								<div class="header-box">
+									<a href="#" class="header-user">
+										<div class="header-user-icon">
+											<img src="img/svg/user.svg" alt="">
+										</div>
+										<div class="header-user-name">Константин</div>
+									</a>
+									<a href="tel:+79105970088" class="header-phone">
+										<div class="header-phone-number">+7 910 597-00-88</div>
+										<div class="header-phone-contact">Калуга, ул. Суворова, д. 110</div>
+										<img class="header-phone-icon" src="img/svg/phone.svg" alt="">
+									</a>
+									<a href="#" class="btn">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_288_940)">
+												<path
+													d="M2.5 19.1666L5.83333 12.0833L6.66667 11.6666L11.25 0.833313L17.9167 3.74998L10.8333 15.4166L6.66667 12.0833"
+													stroke="white" stroke-width="1.5" />
+												<path
+													d="M12.5 3.75C11.25 3.75 10.8333 4.58333 10.8333 5.41667C10.8333 6.66667 12.2222 6.80556 12.9167 6.66667V7.08333C12.5833 7.75 11.6667 8.19444 11.25 8.33333L10.8333 8.75L11.25 9.16667C12.5 9.16667 14.1667 7.5 14.1667 6.25C14.1667 5 13.75 3.75 12.5 3.75Z"
+													fill="white" />
+											</g>
+											<defs>
+												<clipPath id="clip0_288_940">
+													<rect width="20" height="20" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+										<span>Забронировать</span>
+									</a>
+									<div class="header-mobile-menu-trigger">
+										<img src="img/svg/burger.svg" alt="">
+										<img src="img/svg/x-close.svg" alt="">
+									</div>
+								</div>
+							</div>
 
 						</div>
 					</div>
@@ -34,17 +166,7 @@
 				</div>
 			</header>
 			<main>
-				<div class="web-check">
-					<label>
-						<input type="checkbox" class="check-box" required=" ">
-						<span class="check-style"></span>
-						<span class="web-check-text">
-							Нажимая кнопку «Запросить оценку», я даю свое согласие на обработку моих персональных данных
 
-						</span>
-
-					</label>
-				</div>
 			</main>
 		</div>
 		<footer class="footer">
