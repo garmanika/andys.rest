@@ -1,0 +1,33 @@
+@media (max-width: 1598px) {
+    .menu-section-items{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width: 1199px) {
+    .menu-section-items{
+        grid-template-columns: repeat(2,1fr);
+        gap: 48px 32px;
+    }
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .menu-section-items{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .menu-section-item{
+        padding-bottom: 72px;
+    }
+    .menu-section-item-title{
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+
+}

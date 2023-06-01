@@ -1,0 +1,31 @@
+@media (max-width: 1598px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px) {
+  .personal-orders-titles{
+    display: none;
+  }
+  .personal-orders .accordion-item-heading{
+    grid-template-columns: repeat(2,auto);
+    padding: 24px 0;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .personal-orders .accordion-item-heading span:last-child{
+    grid-column: span 2;
+  }
+  .personal-orders .accordion-item-content{
+    padding-top: 0;
+  }
+}

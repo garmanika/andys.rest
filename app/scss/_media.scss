@@ -1,140 +1,36 @@
-
-body.no-scroll {
-	height: 100%;
-	overflow: hidden;
+@media (max-width: 1598px) {
+  .body-marker {
+    top: 232px;
+  }
 }
 
-.header-menu-mobile-container {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-
-	opacity: 0;
-	overflow-y: auto;
-	pointer-events: none;
-	transition: opacity 0.25s ease;
+@media (max-width: 1199px) {
+  .body-marker {
+    top: 208px;
+  }
 }
 
-.header-menu-mobile-container.active {
-
-	opacity: 1;
-	transition: opacity 0.25s ease-in;
-	pointer-events: initial;
-}
-
-.header-menu-mobile-container > .container {
-	position: relative;
-}
-
-.header-menu-mobile {
-	display: none;
-}
-
-.active .header-menu-mobile {
-	display: block;
-}
-
-
-
-
-
-.is-top.current .header-menu-mobile-item {
-	display: block;
-}
-
-.header-menu-mobile-item.active {
-	display: block;
-}
-
-
-
-
-.header-menu-mobile-sub {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
-	width: 100%;
-	min-height: 100%;
-}
-
-.active > .header-menu-mobile-sub {
-	display: block;
-}
-
-.header-menu-mobile-sub-heading {
-	display: none;
-}
-
-.is-parent.current > .header-menu-mobile-sub > .header-menu-mobile-sub-heading {
-	display: block;
-}
-
-.header-menu-mobile-sub-heading > a,
-.header-menu-mobile-sub-heading > span {
-	display: flex;
-	cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-.header-menu-mobile-sub-item {
-	display: none;
-}
-
-.header-menu-mobile-sub-item.active {
-	display: block;
-}
-
-.is-parent.current > .header-menu-mobile-sub > .header-menu-mobile-sub-list > .header-menu-mobile-sub-item {
-	display: block;
-}
-
-
-
-.header-menu-mobile-sub-item.is-parent > a svg,
-.header-menu-mobile-sub-item.is-parent > span svg {
-	width: 24px;
-	margin: 0 0 0 16px;
-}
-
-.header-menu-mobile-links {
-	display: none;
-	justify-content: space-between;
-	margin: 22px 0 0 0;
-}
-
-.current .header-menu-mobile-links {
-	display: flex;
-}
-
-.header-menu-mobile-links .header-ui-buttons-links {
-	margin: 0;
-}
+@media (max-width: 991px) {}
 
 @media (max-width: 767px) {
+  .body-marker {
+    top: 138px;
+  }
 
-
-	
-
-
-
-
-
-	
-
-
-
-	
-
-
+  .body-marker-content {
+    display: none;
+  }
+  .body-marker{
+    padding-right: 0;
+    height: 48px;
+    min-width: 48px;
+  }
+  .body-marker-shop{
+    display: flex;
+    top: 88px;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-
+@media (max-width: 575px) {}

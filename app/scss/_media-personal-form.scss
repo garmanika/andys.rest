@@ -1,0 +1,33 @@
+@media (max-width: 1598px) {
+
+}
+
+@media (max-width: 1199px) {
+  ul.personal-links{
+    flex-direction: row;
+    margin-bottom: 42px;
+  }
+  .personal-links a{
+    padding: 0;
+    padding-bottom: 4px;
+  }
+  .personal-links li + li{
+    margin-left: 32px;
+  }
+  .personal-links a{
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+  ul.personal-links{
+    margin-bottom: 34px;
+  }
+  .personal-form-inner{
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 575px) {}

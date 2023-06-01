@@ -1,0 +1,36 @@
+@media (max-width: 1598px) {
+  .body-marker {
+    top: 232px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .body-marker {
+    top: 208px;
+  }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {
+  .body-marker {
+    top: 138px;
+  }
+
+  .body-marker-content {
+    display: none;
+  }
+  .body-marker{
+    padding-right: 0;
+    height: 48px;
+    min-width: 48px;
+  }
+  .body-marker-shop{
+    display: flex;
+    top: 88px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {}
