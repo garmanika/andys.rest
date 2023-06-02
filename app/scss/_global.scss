@@ -52,13 +52,12 @@ body.no-scroll-mobile {
   list-style: none;
 }
 
-.web-check-text {
+.web-check-text,
+.web-radio-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
-
   color: var(--color-secondary);
-
   a {
     color: var(--color-accent);
   }
@@ -103,46 +102,6 @@ button {
 button,
 input {
   outline: 0;
-}
-
-.web-radio-btn label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 130%;
-  padding-left: 32px;
-  color: #242424;
-  cursor: pointer;
-}
-
-.radio-box {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  padding-left: 30px;
-}
-
-.radio-style {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 1.5px solid var(--color-accent);
-  background: var(--color-white);
-  margin-left: -32px;
-}
-
-.radio-box:checked+.radio-style::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #fe000c;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
 }
 
 .btn .mob {
@@ -271,7 +230,8 @@ input[type="number"]::-webkit-outer-spin-button {
   content: none;
 }
 
-.web-check label {
+.web-check label,
+.web-radio label {
   display: grid;
   grid-template-columns: 20px 1fr;
   align-items: start;
@@ -280,13 +240,15 @@ input[type="number"]::-webkit-outer-spin-button {
   gap: 15px;
 }
 
-.web-check .check-style {
+.web-check .check-style,
+.web-radio .radio-style {
   border: 1.5px solid var(--color-accent);
   width: 20px;
   height: 20px;
 }
 
-.web-check .check-box {
+.web-check .check-box, 
+.web-radio .radio-box {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -296,7 +258,8 @@ input[type="number"]::-webkit-outer-spin-button {
   clip: rect(0 0 0 0);
 }
 
-.web-check .check-box:checked+.check-style {
+.web-check .check-box:checked+.check-style,
+.web-radio .radio-box:checked+.radio-style {
   background-image: url(../img/svg/check.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -683,6 +646,17 @@ section+section {
   input{
     background: url(../img/svg/data-icon.svg) calc(100% - 16px) 12px/24px 24px no-repeat;
   }
+}
+.modal{
+	max-width: 568px;
+	padding: 80px 64px;
+	.h3{
+		text-align: center;
+		margin-bottom: 48px;
+	}
+}
+.fancybox__backdrop{
+	background: rgba($color: var(--color-primary), $alpha: 0.4)
 }
 @media (max-width: 1399px) {
   section+section {

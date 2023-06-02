@@ -43,13 +43,15 @@ body.no-scroll-mobile {
   padding: 0;
   list-style: none
 }
-.web-check-text {
+.web-check-text,
+.web-radio-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
   color: var(--color-secondary)
 }
-.web-check-text a {
+.web-check-text a,
+.web-radio-text a {
   color: var(--color-accent)
 }
 select::-moz-placeholder {
@@ -84,42 +86,6 @@ button {
 button,
 input {
   outline: 0
-}
-.web-radio-btn label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 130%;
-  padding-left: 32px;
-  color: #242424;
-  cursor: pointer
-}
-.radio-box {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  padding-left: 30px
-}
-.radio-style {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 1.5px solid var(--color-accent);
-  background: var(--color-white);
-  margin-left: -32px
-}
-.radio-box:checked + .radio-style::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #fe000c;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  border-radius: 50%
 }
 .btn .mob {
   display: block
@@ -222,7 +188,8 @@ input[type=number]::-webkit-outer-spin-button {
 .swiper-rtl .swiper-button-prev:after {
   content: none
 }
-.web-check label {
+.web-check label,
+.web-radio label {
   display: grid;
   grid-template-columns: 20px 1fr;
   align-items: start;
@@ -230,12 +197,14 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
   gap: 15px
 }
-.web-check .check-style {
+.web-check .check-style,
+.web-radio .radio-style {
   border: 1.5px solid var(--color-accent);
   width: 20px;
   height: 20px
 }
-.web-check .check-box {
+.web-check .check-box,
+.web-radio .radio-box {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -244,7 +213,8 @@ input[type=number]::-webkit-outer-spin-button {
   overflow: hidden;
   clip: rect(0 0 0 0)
 }
-.web-check .check-box:checked + .check-style {
+.web-check .check-box:checked + .check-style,
+.web-radio .radio-box:checked + .radio-style {
   background-image: url(../img/svg/check.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -574,6 +544,17 @@ section + section {
 .web-form-item-data-icon input {
   background: url(../img/svg/data-icon.svg) calc(100% - 16px) 12px/24px 24px no-repeat
 }
+.modal {
+  max-width: 568px;
+  padding: 80px 64px
+}
+.modal .h3 {
+  text-align: center;
+  margin-bottom: 48px
+}
+.fancybox__backdrop {
+  background: rgba(var(--color-primary),.4)
+}
 @media (max-width:1399px) {
   section + section {
     margin-top: 96px
@@ -881,7 +862,7 @@ ul.header-menu-mobile-list {
   width: fit-content
 }
 .header-bottom .header-menu-mobile-sub-item a span::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 2px;
   left: 0;
@@ -1598,7 +1579,7 @@ body.no-scroll {
   color: var(--color-white)
 }
 .footer-content-contacts-phone::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 4px;
   left: 0;
@@ -1610,7 +1591,7 @@ body.no-scroll {
   background-position: center
 }
 .footer-content-contacts-adress::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 0;
@@ -1622,7 +1603,7 @@ body.no-scroll {
   background-position: center
 }
 .footer-content-contacts-openingh::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 0;
@@ -1634,7 +1615,7 @@ body.no-scroll {
   background-position: center
 }
 .footer-content-contacts-deliveryh::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 0;
@@ -1659,7 +1640,8 @@ body.no-scroll {
   fill: var(--color-white)
 }
 .contact-map .ymaps-2-1-79-ground-pane,
-.footer-map .ymaps-2-1-79-ground-pane {
+.footer-map .ymaps-2-1-79-ground-pane,
+.order-map .ymaps-2-1-79-ground-pane {
   filter: grayscale(1);
   -ms-filter: grayscale(1);
   -webkit-filter: grayscale(1);
@@ -2069,7 +2051,11 @@ body.no-scroll {
 .menu-section-item-quantity-icon {
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  margin-left: auto
 }
 .menu-section-item-quantity-icon img,
 .menu-section-item-quantity-icon svg {
@@ -2086,7 +2072,9 @@ body.no-scroll {
   gap: 16px;
   align-items: center;
   border-bottom: 1.5px solid rgba(153,153,153,.3);
-  height: 48px
+  height: 48px;
+  max-width: 88px;
+  margin-left: auto
 }
 .menu-section-item-quantity-panel-number {
   text-align: center;
@@ -2156,6 +2144,13 @@ body.no-scroll {
 }
 .menu-detail .breadcrumbs {
   margin-bottom: 48px
+}
+.menu-detail-product-content .menu-section-item-quantity-box.active .menu-section-item-quantity-panel {
+  max-width: 100%
+}
+.menu-detail-product-content .menu-section-item-quantity-icon {
+  width: 100%;
+  height: 48px
 }
 .menu-detail-product-content-title {
   margin-bottom: 32px
@@ -2590,7 +2585,8 @@ body.no-scroll {
 }
 @media (max-width:767px) {
   .contact-content .footer-links {
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    justify-content: start
   }
   .contact-content .container-mod,
   .contact-inner footer .container-mod {
@@ -2606,12 +2602,108 @@ body.no-scroll {
     max-width: 100%
   }
 }
+.order-inner {
+  display: grid;
+  gap: 64px
+}
+.order-items {
+  display: grid;
+  gap: 32px
+}
+.order-item {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto,190px);
+  align-items: center;
+  gap: 32px
+}
+.order-item-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: center
+}
+.order-item-img {
+  width: 120px;
+  height: 80px
+}
+.order-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+}
+.order-item-addition {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 32px;
+  align-items: center
+}
+.order-inner .h4 {
+  margin-bottom: 24px
+}
+.radio-inner .web-radio label {
+  grid-template-columns: 1fr
+}
+.radio-inner {
+  display: flex
+}
+.radio-inner .web-radio {
+  width: 100%
+}
+.radio-inner .web-radio + .web-radio {
+  margin-left: 16px
+}
+.radio-inner ~ .order-map {
+  margin-top: 48px
+}
+.radio-inner ~ .web-form-item {
+  margin-top: 24px
+}
+.radio-inner .web-radio-text {
+  padding: 12px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-gray-1);
+  text-align: center
+}
+.radio-inner .web-radio .radio-box:checked + .web-radio-text {
+  border-color: var(--color-secondary)
+}
+.order-map {
+  height: 400px
+}
 @media (max-width:1199px) {
   .body-marker {
     top: 208px
   }
 }
 @media (max-width:767px) {
+  .order-item-img {
+    width: 95px;
+    height: 64px
+  }
+  .order-item {
+    grid-template-columns: 1fr;
+    gap: 16px
+  }
+  .order-item-box {
+    gap: 16px
+  }
+  .order-items {
+    gap: 40px
+  }
+  .radio-inner {
+    flex-direction: column
+  }
+  .radio-inner ~ .order-map {
+    margin-top: 40px
+  }
+  .radio-inner .web-radio + .web-radio {
+    margin-left: 0;
+    margin-top: 16px
+  }
   .body-marker {
     top: 138px;
     padding-right: 0;

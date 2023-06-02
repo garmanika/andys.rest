@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<title></title>
 </head>
@@ -288,10 +289,10 @@
 						<div class="index-banner-content">
 							<div class="container">
 								<div class="index-banner-content-inner">
-									<div class="index-banner-content-title">-20% <br>
+									<div class="index-banner-content-title " >-20% <br>
 										Счастливые <br>
 										часы</div>
-									<div class="index-banner-content-accent">
+									<div class="index-banner-content-accent " data-fancybox data-src="#modal">
 										<span>На все меню с Пн-Пт 01.02.2023-31.03.2023</span>
 									</div>
 								</div>
@@ -644,10 +645,77 @@
 				fill="white" />
 		</svg>
 	</a>
+	<div style='display=none' class="modal" id="modal">
+		<div class="modal-content">
+			<h3 class="h3">оставить заявку</h3>
+			<div class="index-form-content-form">
+				<form>
+					<div class="index-form-content-form-inner">
+						<div class="web-form-item">
+							<input class="web-input" type="text" id="input" required="required" placeholder=" ">
+
+							<label class="web-form-label-sole" for="input">Ваше имя<span>
+									*</span></label>
+						</div>
+						<div class="web-form-item">
+							<input class="web-input" type="tel" id="input" required="required" placeholder=" ">
+
+							<label class="web-form-label-sole" for="input">Телефон<span>
+									*</span></label>
+						</div>
+						<div class="web-form-item web-form-item-data-time">
+							<input class="web-input flatpickr-input" type="text" id="input" placeholder=" " readonly="readonly">
+
+							<label class="web-form-label-sole" for="input">Дата и время
+								визита</label>
+						</div>
+						<div class="web-form-item">
+							<input class="web-input" type="text" id="input" required="required" placeholder=" ">
+
+							<label class="web-form-label-sole" for="input">Количество гостей<span>
+									*</span></label>
+						</div>
+						<div class="web-form-item mod-fw">
+							<input class="web-input" type="text" id="input" required="required" placeholder=" ">
+
+							<label class="web-form-label-sole" for="input">Ваши пожелания</label>
+						</div>
+					</div>
+
+
+					<div class="web-check">
+						<label>
+							<input type="checkbox" class="check-box" required="">
+							<span class="check-style"></span>
+							<span class="web-check-text">
+								Даю согласие на обработку <a href="#">персональных данных</a>
+							</span>
+
+						</label>
+					</div>
+					<a href="#" class="btn">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+							<g clip-path="url(#clip0_247_6203)">
+								<path d="M2.5 19.6666L5.83333 12.5833L6.66667 12.1666L11.25 1.33325L17.9167 4.24992L10.8333 15.9166L6.66667 12.5833" stroke="#313435" stroke-width="1.5"></path>
+								<path d="M12.4999 4.25C11.2499 4.25 10.8333 5.08333 10.8333 5.91667C10.8333 7.16667 12.2221 7.30556 12.9166 7.16667V7.58333C12.5833 8.25 11.6666 8.69444 11.2499 8.83333L10.8333 9.25L11.2499 9.66667C12.4999 9.66667 14.1666 8 14.1666 6.75C14.1666 5.5 13.7499 4.25 12.4999 4.25Z" fill="#313435"></path>
+							</g>
+							<defs>
+								<clipPath id="clip0_247_6203">
+									<rect width="20" height="20" fill="white" transform="translate(0 0.5)"></rect>
+								</clipPath>
+							</defs>
+						</svg>
+						<span>Забронировать столик</span>
+					</a>
+				</form>
+			</div>
+		</div>
+	</div>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 	<script src="js/imask.js"></script>
+	<script src="js/fancybox.js"></script>
 	<script src="js/main.js"></script>
 
 
