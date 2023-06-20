@@ -1,4 +1,4 @@
-@media (max-width: 1598px) {
+@media (max-width: 1479px) {
   .header-top {
     .header-user-name {
       display: none;
@@ -9,16 +9,15 @@
     margin-left: 24px;
   }
   .header-bottom{
-    .header-menu-mobile-sub-item img{
+    padding: 12px 0;
+    .header-bottom-list-item img{
       display: none;
     }
   }
-  .header-bottom .header-menu-mobile-sub-item a{
+  .header-bottom .header-bottom-list-item a{
     grid-template-columns: auto;
   }
-  .header-bottom .header-menu-mobile-sub-item + .header-menu-mobile-sub-item{
-    margin-left: 60px;
-  }
+
 }
 
 @media (max-width: 1199px) {
@@ -39,7 +38,6 @@
     opacity: 0;
     overflow-y: auto;
     pointer-events: none;
-    transition: opacity 0.25s ease;
   }
 
   .header-menu-mobile-container.active {
@@ -59,7 +57,6 @@
     opacity: 0;
     overflow-y: auto;
     pointer-events: none;
-    transition: opacity 0.25s ease;
     z-index: 1;
   }
 
@@ -86,8 +83,8 @@
   ul.header-menu-mobile-list {
     display: block;
     margin: 0;
-    height: 100vh;
     overflow-y: auto;
+    height: calc(100vh - 115px);
   }
   .current ul.header-menu-mobile-list{
     height: calc(100vh - 190px);
@@ -135,9 +132,9 @@
     display: block;
   }
 
-  .header-menu-mobile-footer {
-    padding-bottom: 24px;
-  }
+  // .header-menu-mobile-footer {
+  //   padding-bottom: 24px;
+  // }
 
   .header-menu-mobile-footer .header-phone-contact {
     font-size: 14px;
@@ -189,8 +186,8 @@
   .header-menu-mobile-item>a,
   .back-trigger,
   .header-menu-mobile-sub-item a {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -225,9 +222,7 @@
       height: 1px;
     }
   }
-  .header-bottom .header-menu-mobile-sub-item + .header-menu-mobile-sub-item{
-    margin-left: 36px;
-  }
+
 }
 
 @media (max-width: 991px) {
@@ -235,11 +230,17 @@
   .header-menu-mobile-item>a,
   .back-trigger,
   .header-menu-mobile-sub-item a {
-    max-width: 720px;
+    max-width: 740px;
   }
 
   .header-mobile-menu-trigger {
     margin-left: 24px;
+  }
+  .header-bottom{
+    .container{
+      max-width: 100%;
+      padding-left: calc((100vw - (740px - 1.5rem))/ 2);
+    }
   }
 }
 
@@ -283,10 +284,13 @@
   .header-bottom{
     display: none;
   }
-  
+  ul.header-menu-mobile-list{
+    height: calc(100vh - 75px);
+  }
+
 }
 
-@media (max-width: 575px) {
+@media (max-width: 557px) {
 
   .header-menu-mobile-item>a,
   .back-trigger,

@@ -1,18 +1,18 @@
-@media (max-width: 1598px) {
+@media (max-width: 1479px) {
     .menu-section-items{
         grid-template-columns: repeat(3,1fr);
     }
 }
 
 @media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
     .menu-section-items{
         grid-template-columns: repeat(2,1fr);
         gap: 48px 32px;
     }
-}
-
-@media (max-width: 991px) {
-
 }
 
 @media (max-width: 767px) {
@@ -28,6 +28,6 @@
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 557px) {
 
 }

@@ -1,4 +1,4 @@
-@media (max-width: 1598px) {
+@media (max-width: 1479px) {
     .menu-detail-product{
         grid-template-columns: 550px 1fr;
         gap: 50px;
@@ -35,12 +35,15 @@
     .menu-section-item-box{
         gap: 40px;
     }
+    .menu-detail-product-slider{
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-width: 767px) {
     .menu-detail-product{
-        grid-template-columns: 1fr;
-        gap: 24px;
+        grid-template-columns: 100%;
+        gap: 40px;
     }
     .menu-detail-product-content-box, .menu-detail-slider-title{
         margin-bottom: 40px;
@@ -50,4 +53,4 @@
     }
 }
 
-@media (max-width: 575px) {}
+@media (max-width: 557px) {}
