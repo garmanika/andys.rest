@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<title></title>
 </head>
@@ -20,7 +21,7 @@
 
 	<div class="wrapper-page">
 		<div class="content form">
-			<header class="header sticky">
+			<header class="header ">
 				<div class="header-wrapper">
 					<div class="header-top">
 						<div class="container">
@@ -133,7 +134,7 @@
 													</a>
 
 												</li>
-												<li class="header-menu-mobile-item ">
+												<li class="header-menu-mobile-item d-xl-none">
 													<a href="#">
 														Личный кабинет
 													</a>
@@ -281,72 +282,50 @@
 							<div class="col-xl-3 order-xl-1">
 								<ul class="personal-links">
 									<li><a href="#">Профиль</a></li>
-									<li><a href="#" >Заказы</a></li>
+									<li><a href="#">Заказы</a></li>
 									<li><a href="#" class="active">Адреса доставки</a></li>
 								</ul>
 							</div>
-							<div class="col-xl-5 ">
+							<div class="col-xl-9 ">
 								<div class="personal-adress">
-									<form>
-										<div class="personal-adress-inner">
-											<div class="web-form-item control">
-												<textarea placeholder=" "  disabled>Калуга, ул. Болдина, д. 57, офис 508</textarea>
 
-												<label class="web-form-label-sole" for="input">Adress</label>
-												<div class="web-form-item-control">
-													<div class="web-form-item-undis">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-															viewBox="0 0 24 24" fill="none">
-															<path d="M12 20H21" stroke="#999999" stroke-width="1.5"
-																stroke-linecap="round" stroke-linejoin="round" />
-															<path
-																d="M16.5 3.50001C16.8978 3.10219 17.4374 2.87869 18 2.87869C18.2786 2.87869 18.5544 2.93356 18.8118 3.04017C19.0692 3.14677 19.303 3.30303 19.5 3.50001C19.697 3.697 19.8532 3.93085 19.9598 4.18822C20.0665 4.44559 20.1213 4.72144 20.1213 5.00001C20.1213 5.27859 20.0665 5.55444 19.9598 5.81181C19.8532 6.06918 19.697 6.30303 19.5 6.50001L7 19L3 20L4 16L16.5 3.50001Z"
-																stroke="#999999" stroke-width="1.5" stroke-linecap="round"
-																stroke-linejoin="round" />
-														</svg>
-													</div>
-													<div class="web-form-item-clear">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-															viewBox="0 0 24 24" fill="none">
-															<path d="M18 6L6 18M6 6L18 18" stroke="#999999"
-																stroke-width="1.5" stroke-linecap="round"
-																stroke-linejoin="round" />
-														</svg>
-													</div>
-												</div>
+									<div class="personal-adress-inner" >
+										<div class="web-form-item control">
+											<textarea placeholder=" "
+												disabled>Калуга, ул. Болдина, д. 57, офис 508</textarea>
 
+
+											<div class="web-form-item-control">
+												<button class="web-form-item-undis">
+					
+												</button>
+												<button class="web-form-item-clear">
+									
+												</button>
 											</div>
-											<div class="web-form-item control">
-												<textarea placeholder=" "  disabled>Калуга, ул. Болдина, д. 57, офис 508</textarea>
 
-												<label class="web-form-label-sole" for="input">Adress</label>
-												<div class="web-form-item-control">
-													<div class="web-form-item-undis">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-															viewBox="0 0 24 24" fill="none">
-															<path d="M12 20H21" stroke="#999999" stroke-width="1.5"
-																stroke-linecap="round" stroke-linejoin="round" />
-															<path
-																d="M16.5 3.50001C16.8978 3.10219 17.4374 2.87869 18 2.87869C18.2786 2.87869 18.5544 2.93356 18.8118 3.04017C19.0692 3.14677 19.303 3.30303 19.5 3.50001C19.697 3.697 19.8532 3.93085 19.9598 4.18822C20.0665 4.44559 20.1213 4.72144 20.1213 5.00001C20.1213 5.27859 20.0665 5.55444 19.9598 5.81181C19.8532 6.06918 19.697 6.30303 19.5 6.50001L7 19L3 20L4 16L16.5 3.50001Z"
-																stroke="#999999" stroke-width="1.5" stroke-linecap="round"
-																stroke-linejoin="round" />
-														</svg>
-													</div>
-													<div class="web-form-item-clear">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-															viewBox="0 0 24 24" fill="none">
-															<path d="M18 6L6 18M6 6L18 18" stroke="#999999"
-																stroke-width="1.5" stroke-linecap="round"
-																stroke-linejoin="round" />
-														</svg>
-													</div>
-												</div>
-
-											</div>
-		
 										</div>
-										<button class="btn">добавить</button>
-									</form>
+										<div class="web-form-item control">
+											<textarea placeholder=" "
+												disabled>Калуга, ул. Промышленная, д. 10, кв. 39</textarea>
+
+
+											<div class="web-form-item-control">
+												<button class="web-form-item-undis">
+						
+												</button>
+												<button class="web-form-item-clear">
+								
+												</button>
+											</div>
+
+										</div>
+								
+
+									</div>
+									
+									<button  class="btn add">добавить</button>
+
 
 								</div>
 							</div>
@@ -356,6 +335,9 @@
 				</section>
 			</main>
 		</div>
+
+	
+
 		<footer class="footer">
 			<div class="footer-inner">
 				<div class="footer-content">
@@ -368,7 +350,7 @@
 								<div class="footer-content-contacts">
 									<a href="tel:+79105970088"
 										class="footer-content-contacts-phone">+7 910 597‒00‒88</a>
-										<div class="footer-content-contacts-address">г. Калуга, ул. Суворова, д. 110</div>
+									<div class="footer-content-contacts-address">г. Калуга, ул. Суворова, д. 110</div>
 									<div class="footer-content-contacts-opening">с 12:00 до 24:00 (часы работы)</div>
 									<div class="footer-content-contacts-delivery">с 12:00 до 24:0 (часы доставки)</div>
 								</div>
@@ -456,6 +438,7 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jsdelivr.js"></script>
 	<script src="js/imask.js"></script>
+	<script src="js/fancybox.js"></script>
 	<script src="js/main.js"></script>
 
 

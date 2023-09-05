@@ -6,13 +6,13 @@
 
 }
 
-@media (max-width: 991px) {}
-
-@media (max-width: 767px) {
-
+@media (max-width: 991px) {
+  .personal-orders{
+    max-width: 100%;
+  }
 }
 
-@media (max-width: 557px) {
+@media (max-width: 767px) {
   .personal-orders-titles{
     display: none;
   }
@@ -28,4 +28,19 @@
   .personal-orders .accordion-item-content{
     padding-top: 0;
   }
+  .accordion-item:first-child{
+    .accordion-item-heading{
+      padding-top: 0;
+    }
+    
+  }
+  .accordion-item:last-child{
+    .accordion-item-heading{
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 557px) {
+
 }

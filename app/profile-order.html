@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<title></title>
 </head>
@@ -20,7 +21,7 @@
 
 	<div class="wrapper-page">
 		<div class="content form">
-			<header class="header sticky">
+			<header class="header ">
 				<div class="header-wrapper">
 					<div class="header-top">
 						<div class="container">
@@ -133,7 +134,7 @@
 													</a>
 
 												</li>
-												<li class="header-menu-mobile-item ">
+												<li class="header-menu-mobile-item d-xl-none">
 													<a href="#">
 														Личный кабинет
 													</a>
@@ -285,7 +286,7 @@
 									<li><a href="#">Адреса доставки</a></li>
 								</ul>
 							</div>
-							<div class="col-xl-7 ">
+							<div class="col-xl-9 ">
 								<div class="personal-orders">
 									<div class="personal-orders-titles">
 										<span>Дата</span>
@@ -293,7 +294,8 @@
 										<span>Сумма</span>
 										<span>Статус</span>
 									</div>
-									<div class="accordion-item"
+									<div class="personal-orders-accordions">
+										<div class="accordion-item"
 										data-accordion-group="1" >
 										<div class="accordion-item-heading">
 											<span>21.03.23</span>
@@ -323,7 +325,7 @@
 											<span>21.03.23</span>
 											<span>№2345</span>
 											<span>999 999 ₽</span>
-											<span class="accordion-item-heading-icon">Выполняется
+											<span class="accordion-item-heading-icon">Выполнен
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
 													<path d="M5 8L10 13L15 8" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
@@ -347,7 +349,7 @@
 											<span>21.03.23</span>
 											<span>№2345</span>
 											<span>999 999 ₽</span>
-											<span class="accordion-item-heading-icon">Выполняется
+											<span class="accordion-item-heading-icon">Выполнен
 												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
 													<path d="M5 8L10 13L15 8" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
@@ -365,6 +367,8 @@
 
 										</div>
 									</div>
+									</div>
+
 								</div>
 							</div>
 
@@ -473,6 +477,7 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jsdelivr.js"></script>
 	<script src="js/imask.js"></script>
+	<script src="js/fancybox.js"></script>
 	<script src="js/main.js"></script>
 
 

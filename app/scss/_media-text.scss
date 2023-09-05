@@ -14,10 +14,29 @@
   .img-box {
     grid-template-columns: 1fr;
     gap: 48px;
+ 
+  }
+  .text-page .img-box img{
+    margin: 0;
   }
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+  .text-page .p, .text-page p,
+  .text-page .blockquote,
+  .text-page ol li, .text-page ul li,
+  .text-page .h4, .text-page h4,
+  .text-page .h3, .text-page h3,
+  .text-page .h2, .text-page h2,
+  .text-page a,
+  .text-page .a,
+  .text-page i,
+  .text-page .i,
+  .text-page b,
+  .text-page .b{
+    max-width: 100%;
+  }
+}
 
 @media (max-width: 767px) {
   .text-page img {
@@ -42,6 +61,7 @@
     margin: 40px 0;
   }
 
+  .text-page blockquote,
   .text-page .blockquote {
     padding: 104px 32px 40px 32px;
     margin: 40px 0;
@@ -53,6 +73,12 @@
 
   .text-page-slider {
     margin: 24px 0 40px;
+  }
+  .text-page .h4, .text-page h4{
+    margin: 40px 0 16px;
+  }
+  .text-page .h4~p, .text-page h4~p{
+    margin-top: 16px;
   }
 }
 

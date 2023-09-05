@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/style.css" />
 	<title></title>
 </head>
@@ -20,7 +21,7 @@
 
 	<div class="wrapper-page">
 		<div class="content">
-			<header class="header sticky">
+			<header class="header ">
 				<div class="header-wrapper">
 					<div class="header-top">
 						<div class="container">
@@ -133,7 +134,7 @@
 													</a>
 
 												</li>
-												<li class="header-menu-mobile-item ">
+												<li class="header-menu-mobile-item d-xl-none">
 													<a href="#">
 														Личный кабинет
 													</a>
@@ -280,53 +281,56 @@
 				</div>
 				<section class="text-page">
 					<div class="container">
-						<div class="row">
-							<div class="col-xl-8">
-								<p class="p">Lorem ipsum dolor <a href="#">sit amet</a>, consectetur adipiscing elit.
+				
+					
+								<p>Lorem ipsum dolor <a  href="#">sit amet</a>, consectetur adipiscing elit.
 									Aenean
 									euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
 									justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis
 									dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra
-									vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc <i>accuan
-										eget</i>.</p>
-							</div>
-						</div>
-						<img class="img-fw" src="img/text-page/img-fw.jpg" alt="">
-						<div class="row">
-							<div class="col-xl-8">
-								<p class="p">
-									<b>Lorem ipsum</b>
+									vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc <i >accuan eget</i>.</p>
+				
+									<picture>
+										<source media="(max-width: 767px)" srcset="img/text-page/img-fw-mob.jpg">
+										<source srcset="img/text-page/img-fw.jpg">
+										<img src="img/text-page/img-fw.jpg" alt="">
+									</picture>
+						
+				
+						
+								<p >
+									<b >Lorem ipsum</b>
 									dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
 									laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
 									sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient
 									montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
 									felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
 								</p>
-								<p class="p">Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
+								<p >Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
 									parturient
 									montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
 									felis tellus mollis orci.</p>
-								<h2 class="h2">Заголовок H2</h2>
-								<p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								<h2 >Заголовок H2</h2>
+								<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 									bibendum
 									laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
 									sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient
 									montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
 									felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-								<h3 class="h3">Заголовок H3</h3>
-								<p class="p">Lorem ipsum dolor sit amet consectetur. Vel commodo gravida morbi
+								<h3 >Заголовок H3</h3>
+								<p >Lorem ipsum dolor sit amet consectetur. Vel commodo gravida morbi
 									vestibulum justo
 									pellentesque amet. Scelerisque at scelerisque porttitor cras consequat praesent
 									dictumst erat etiam. Sapien in dolor sit et tellus praesent. Proin venenatis
 									dignissim semper quisque ornare. Laoreet tincidunt orci at mi cras.</p>
-								<h4 class="h4">Заголовок H4</h4>
-								<p class="p">Lorem ipsum dolor sit amet consectetur. Vel commodo gravida morbi
+								<h4 >Заголовок H4</h4>
+								<p >Lorem ipsum dolor sit amet consectetur. Vel commodo gravida morbi
 									vestibulum justo
 									pellentesque amet. Scelerisque at scelerisque porttitor cras consequat praesent
 									dictumst erat etiam. Sapien in dolor sit et tellus praesent. Proin venenatis
 									dignissim semper quisque ornare. Laoreet tincidunt orci at mi cras.</p>
-							</div>
-						</div>
+					
+				
 						<div class="text-page-slider">
 							<div class="swiper">
 								<div class="swiper-wrapper">
@@ -346,10 +350,10 @@
 								<div class="swiper-pagination"></div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-xl-8">
+					
+					
 								<div class="text-page-list-box">
-									<h4 class="h4"> Нумерованный список </h4>
+									<h4 > Нумерованный список </h4>
 									<ol>
 										<li>
 											Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
@@ -369,15 +373,60 @@
 											sed
 											rhoncus pronin sapien nunc accuan eget.
 										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
+										<li>
+											Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+											sed
+											rhoncus pronin sapien nunc accuan eget.
+										</li>
 									</ol>
 								</div>
 
-								<p class="p">Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
+								<p >Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis
 									parturient
 									montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
 									felis tellus mollis orci.</p>
 								<div class="text-page-list-box">
-									<h4 class="h4">Маркерованный список</h4>
+									<h4 >Маркерованный список</h4>
 									<ul>
 										<li>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
 											тексты</li>
@@ -390,13 +439,13 @@
 									</ul>
 								</div>
 
-								<p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
 									bibendum
 									laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
 									sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient
 									montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
 									felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-								<blockquote class="blockquote">
+								<blockquote >
 									<p>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit fames at
 										tincidunt interdum sem nam tincidunt hac. Iaculis tortor in hendrerit nullam
@@ -447,8 +496,8 @@
 								</p>
 				
 					
-							</div>
-						</div>
+						
+					
 					</div>
 				</section>
 			</main>
@@ -553,6 +602,7 @@
 	<script src="js/swiper.min.js"></script>
 	<script src="js/jsdelivr.js"></script>
 	<script src="js/imask.js"></script>
+	<script src="js/fancybox.js"></script>
 	<script src="js/main.js"></script>
 
 

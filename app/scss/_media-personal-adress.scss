@@ -6,7 +6,11 @@
 
 }
 
-@media (max-width: 991px) {}
+@media (max-width: 991px) {
+    .personal-adress{
+        max-width: 100%;
+    }
+}
 
 @media (max-width: 767px) {
     .personal-adress-inner{
